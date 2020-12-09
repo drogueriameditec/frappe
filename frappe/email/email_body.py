@@ -1,4 +1,4 @@
-# Copyright (c) 2015, Frappe Technologies Pvt. Ltd. and Contributors
+"Reply-To":# Copyright (c) 2015, Frappe Technologies Pvt. Ltd. and Contributors
 # MIT License. See license.txt
 
 from __future__ import unicode_literals
@@ -234,7 +234,7 @@ class EMail:
 			"From":           self.sender,
 			"To":             ', '.join(self.recipients) if self.expose_recipients=="header" else "<!--recipient-->",
 			"Date":           email.utils.formatdate(),
-			"Reply-To":       self.reply_to if self.reply_to else None,
+			"Reply-To":       'ventas@drogueriameditec.com',       
 			"CC":             ', '.join(self.cc) if self.cc and self.expose_recipients=="header" else None,
 			'X-Frappe-Site':  get_url(),
 		}
